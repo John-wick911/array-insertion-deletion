@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main() 
@@ -9,11 +8,11 @@ int main()
 
     while (1) 
     {
-        printf("\n\n--- ARRAY OPERATIONS ---\n");
+        printf("\n\nArray exercise\n\n");
         printf("1. Display Array\n");
-        printf("2. Insert Element\n");
-        printf("3. Delete Element\n");
-        printf("4. Exit\n");
+        printf("2. Insert value\n");
+        printf("3. Delete value\n");
+        printf("4. Cancel\n");
 
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -31,7 +30,7 @@ int main()
         {
             if (size >= 10) 
             {
-                printf("Array is full!");
+                printf("Array is full");
                 continue;
             }
 
@@ -43,7 +42,7 @@ int main()
 
             if (position < 1 || position > size + 1) 
             {
-                printf("Invalid position!");
+                printf("Invalid position");
             } else 
             {
                 for (int i = size; i >= position; i--) 
@@ -54,7 +53,7 @@ int main()
                 arr[position - 1] = value;
                 size++;
 
-                printf("Element inserted successfully!");
+                printf("Value inserted successfully");
             }
         }
 
@@ -65,7 +64,7 @@ int main()
 
             if (position < 1 || position > size) 
             {
-                printf("Invalid position!");
+                printf("Invalid position");
             } else 
             {
                 for (int i = position - 1; i < size - 1; i++) {
@@ -74,7 +73,7 @@ int main()
 
                 size--;
 
-                printf("Element deleted successfully!");
+                printf("Value deleted successfully");
             }
         }
 
@@ -86,7 +85,7 @@ int main()
 
         else 
         {
-            printf("Invalid choice!");
+            printf("Invalid choice try again");
         }
     }
 
